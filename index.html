@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <title>Amitech 2018 - ASET</title>
   <link rel="canonical" href="https://www.ampstart.com/templates/amitech.amp">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-
+  <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
   
   <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -80,10 +81,26 @@
       <!-- Landing icons mobile-->
       <div class="amitech-hero-search ">     
 <svg class="amitech-icon " viewbox="0 0 74 100"><path fill="currentColor" d="M40.18 95.404A3.944 3.944 0 0 1 37 97a3.944 3.944 0 0 1-3.18-1.596C28.268 87.787 5 54.66 5 34.334 5 17.027 19.327 3 37 3c17.673 0 32 14.028 32 31.333 0 20.327-23.267 53.454-28.82 61.07zM37 14.75c-11.046 0-20 8.768-20 19.583 0 10.816 8.954 19.584 20 19.584s20-8.768 20-19.584c0-5.193-2.107-10.174-5.858-13.847-3.75-3.672-8.838-5.736-14.142-5.736z"></path></svg>         </label>
-<div style="margin-top:3em">
-<a href="#" class="ampstart-btn amitech-input-big rounded center bold white block col-12">
-Register
-</a>
+<div style="margin-top:2em">
+  <button class="ampstart-btn amitech-input-big rounded center bold white block col-12" on="tap:schedule">
+    Schedule
+  </button>
+</div>
+<amp-lightbox style="background-color: rgba(0, 0, 0, 0.8)" id="schedule" layout="nodisplay" scrollable>
+  <div style="color:beige; margin: 40px 10px 10px 0" align="right" tabindex="0">
+    <h3>
+    <button class="ampstart-btn rounded" style="background: rgba(0, 0, 0, 0.1)" on="tap:schedule.close"><i class="fa fa-times"></i></button>
+    </h3>
+  </div>
+  <p align="center"> 
+    <amp-img style="max-width: 650px; max-height: 800px; margin-bottom: 60px" src="events-schedule.jpeg" alt="Events Schedule for AMITECH'18" layout="responsive" height="65em" width="50em">
+    </amp-img> 
+  </p>
+</amp-lightbox>
+<div style="margin-top:1em">
+  <a href="#" class="ampstart-btn amitech-input-big rounded center bold white block col-12">
+    Register
+  </a>
 </div>
 
 <!--/ Search Form -->
